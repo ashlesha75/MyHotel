@@ -1,12 +1,10 @@
 'use client'
 
-// ACForm.js
+// AcForm.js
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from '../components/Navbar';
 import { useRouter } from 'next/navigation';
-
-
 
 const ACForm = ({ onSubmit }) => {
     const [sections, setSections] = useState([]);
