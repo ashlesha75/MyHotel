@@ -1,6 +1,5 @@
 'use client'
 
-// AcForm.js
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from '../components/Navbar';
@@ -59,7 +58,7 @@ const ACForm = ({ onSubmit }) => {
                 await axios.patch(`http://localhost:5000/api/section/ac/${selectedSection}`, {
                     acPercentage: parseFloat(acPercentage),
                 });
-                setSuccessMessage('AC Percentage added successfully');
+                setSuccessMessage('AC Percentage added Successfully');
                 setTimeout(() => {
                     setSuccessMessage('');
                 }, 2000); // Close the success message after 2 seconds
